@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cabrera_planes_Pais" object="${pais}" path="/paises" z="58Qk0W/NXLna7oQQzGS6jA0klQY=">
+        <field:display field="codigo" id="s_com_cabrera_planes_Pais_codigo" object="${pais}" z="WAsHfP20vyVFhTqPuTAGwKq63ho="/>
+        <field:display field="nombre" id="s_com_cabrera_planes_Pais_nombre" object="${pais}" z="pnShqf96sa95aQA5727thidThh8="/>
+    </page:show>
+</div>

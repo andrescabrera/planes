@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_cabrera_planes_Universidad" modelAttribute="universidad" path="/universidads" render="${empty dependencies}" z="wjPMgi1Wi+hSEf/TzfWMSmsbNzo=">
+        <field:textarea field="nombre" id="c_com_cabrera_planes_Universidad_nombre" required="true" z="k00h678Sohl2UMW2uj4qE/AVDEo="/>
+        <field:textarea field="codigo" id="c_com_cabrera_planes_Universidad_codigo" z="agrF/hSQ1IAaKypllUuXhfzj2HI="/>
+        <field:select field="ciudad" id="c_com_cabrera_planes_Universidad_ciudad" itemValue="id" items="${ciudads}" path="/ciudads" z="k+K9nwJpLUOw4jmT3xb3ro1benU="/>
+        <field:select field="estudiantes" id="c_com_cabrera_planes_Universidad_estudiantes" itemValue="id" items="${estudiantes}" multiple="true" path="/estudiantes" z="iH37WhkTn4JAX2RxB1eBn6o6xbs="/>
+        <field:select field="carreras" id="c_com_cabrera_planes_Universidad_carreras" itemValue="id" items="${carreras}" multiple="true" path="/carreras" z="VJtoPosxzCdsq6PAkcSEKwgO+tA="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_cabrera_planes_Universidad" render="${not empty dependencies}" z="EyyilhnmuIITK3XVd5EYvu7/FC8="/>
+</div>

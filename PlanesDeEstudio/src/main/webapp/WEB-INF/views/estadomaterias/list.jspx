@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cabrera_planes_EstadoMateria" items="${estadomaterias}" z="3tyn6nF6Ezi96EpLNlj2pQlnp5k=">
+        <table:table data="${estadomaterias}" id="l_com_cabrera_planes_EstadoMateria" path="/estadomaterias" z="ILizPhUkM7Ig68nmF32YK9/z8pw=">
+            <table:column id="c_com_cabrera_planes_EstadoMateria_nombre" property="nombre" z="aZr4lFEtCFKJeo7HDg0/GIIswYY="/>
+            <table:column id="c_com_cabrera_planes_EstadoMateria_materia" property="materia" z="AbFTZSghKHd4WVG/JUs16OJCnTU="/>
+            <table:column id="c_com_cabrera_planes_EstadoMateria_estudiante" property="estudiante" z="IuC6HWPPTQ1itEenpvjDuNXkxnE="/>
+        </table:table>
+    </page:list>
+</div>

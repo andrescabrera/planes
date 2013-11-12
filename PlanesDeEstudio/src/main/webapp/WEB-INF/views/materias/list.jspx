@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cabrera_planes_Materia" items="${materias}" z="rBNjT1KMw3iG6tL254QYp+6uNKo=">
+        <table:table data="${materias}" id="l_com_cabrera_planes_Materia" path="/materias" z="OV3dgzc8tyDPDEjUabreKVBmWGA=">
+            <table:column id="c_com_cabrera_planes_Materia_codigo" property="codigo" z="/R1DArjHartoDkGJlgFANDLOIfM="/>
+            <table:column id="c_com_cabrera_planes_Materia_nombre" property="nombre" z="1YqAJ4YuVvK7czH/6oGi3VfUX+M="/>
+            <table:column id="c_com_cabrera_planes_Materia_correlativas" property="correlativas" z="Q4fwECEUxa9JvxcjSN6ltg+XUgI="/>
+            <table:column id="c_com_cabrera_planes_Materia_planes" property="planes" z="0Q4/lGyBeVj9//cg3GBAOWVseGw="/>
+        </table:table>
+    </page:list>
+</div>

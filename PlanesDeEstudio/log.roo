@@ -1,0 +1,158 @@
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log opened at 2013-11-09 19:50:05
+project --topLevelPackage com.cabrera.planes --projectName PlanesDeEstudio --java 7 --packaging JAR
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log closed at 2013-11-09 19:50:11
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log opened at 2013-11-09 19:54:07
+persistence setup --database MYSQL --provider HIBERNATE 
+entity jpa --class com.cabrera.planes.Nivel --testAutomatically
+field string --fieldName nombre --notNull --sizeMax 64 --sizeMin 4
+hint
+hint topics
+entity jpa --class com.cabrera.planes.PlanDeEstudio --testAutomatically 
+field string --fieldName nombre --notNull --sizeMax 64 --sizeMin 4
+field string --fieldName codigo --sizeMax 64 --sizeMin 1 --notNull 
+entity jpa --class com.cabrera.planes.Materia --testAutomatically 
+field string --fieldName codigo --sizeMin 1 --sizeMax 64 --comment "el nombre que le da la universidad"
+field string --fieldName nombre --sizeMin 1 --sizeMax 64 --comment "el nombre que le da la universidad"
+field set --fieldName correlativas --type ~.Materia
+exit 
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log closed at 2013-11-09 20:19:10
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log opened at 2013-11-09 20:19:22
+focus --class ~.PlanDeEstudio
+field set --fieldName materias --type ~.Materia
+focus --class Materia
+field set --fieldName plan --type ~.PlanDeEstudio
+focus --class ~.NivelDataOnDemand
+focus --class Nivel
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log closed at 2013-11-10 00:26:26
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log opened at 2013-11-10 16:41:26
+focus --class Nivel
+entity jpa --class com.cabrera.planes.Carrera --testAutomatically 
+field string --fieldName nombre --notNull --sizeMax 64 --sizeMin 3
+field string --fieldName codigo --sizeMin 1 --sizeMax 1024
+field set --fieldName planes --type com.cabrera.planes.PlanDeEstudio
+field reference --fieldName Nivel --type com.cabrera.planes.Nivel
+focus --class ~.Nivel
+field set --fieldName carreras --type ~.Carrera
+focus --class ~.PlanDeEstudio
+field reference --fieldName carrera --type ~.Carrera
+focus --class ~.Carrera
+field set --fieldName planes --type ~.PlanDeEstudio
+focus --class ~.Carrera
+field set --fieldName planes --type ~.PlanDeEstudio --mappedBy carrera
+focus --class PlanDeEstudio
+focus --class Carrera
+field set --fieldName planes --type ~.PlanDeEstudio --mappedBy carrera --cardinality ONE_TO_MANY 
+focus --class Nivel
+field set --fieldName carreras --type ~.Carrera --cardinality ONE_TO_MANY --mappedBy nivel
+focus --class PlanDeEstudio
+field set --fieldName materias --type ~.Materia --cardinality MANY_TO_MANY --mappedBy plan
+focus --class Materia
+field set --fieldName planes --type ~.PlanDeEstudio --cardinality MANY_TO_MANY
+entity jpa --class Estudiante --testAutomatically
+field email template --fieldName email
+field string --fieldName email --notNull --regexp ^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$
+field string --fieldName ciudad
+field string --fieldName nombre --notNull
+field string --fieldName apellido --notNull
+field date --fieldName cumpleaños --type java.util.Date --notNull
+field string --fieldName biografia
+field date --fieldName fechaNacimiento --type java.util.Date --notNull
+field set --fieldName carreras --type ~.Carrera
+entity jpa --class com.cabrera.planes.Pais --testAutomatically 
+field string --fieldName nombre --notNull --sizeMax 64 --sizeMin 4
+field string --fieldName codigo --notNull --sizeMax 1024 --sizeMin 2
+entity jpa --class com.cabrera.planes.Ciudad --testAutomatically
+field string --fieldName nombre --notNull --sizeMax 64 --sizeMin 4
+field string --fieldName codigoPostal --notNull --sizeMax 1024 --sizeMin 2
+field reference --fieldName pais --type Pais
+entity jpa --class com.cabrera.planes.Provincia --testAutomatically 
+field string --fieldName nombre --notNull --sizeMax 64 --sizeMin 4
+field string --fieldName codigo --notNull --sizeMax 1024 --sizeMin 2
+field reference --fieldName pais --type Pais
+focus --class ~.Ciudad
+field reference --fieldName provincia --type ~.Provincia
+focus --class ~.Carrera
+field set --fieldName estudiantes --type ~.Estudiante --mappedBy carreras --cardinality MANY_TO_MANY
+hint web
+hint 
+hint web mvc
+hint web
+hint web mvc
+web mvc json setup
+web mvc all --package com.cabrera.planes
+persistence setup --database MYSQL --provider HIBERNATE --databaseName planes --hostName localhost --userName root --password 1164_aA0120D
+focus --class ~.Carrera
+entity jpa --class Universidad --testAutomatically 
+field string --fieldName nombre --notNull --sizeMax 64 --sizeMin 8
+field string --fieldName codigo --sizeMax 1024 --sizeMin 4
+field reference --fieldName ciudad --type Ciudad
+field set --fieldName carreras --type com.cabrera.planes.Carrera --cardinality MANY_TO_MANY
+field set --fieldName estudiantes --type ~.Estudiante --mappedBy universidades --cardinality MANY_TO_MANY
+focus --class Estudiante
+field set --fieldName universidades --type ~.Universidad --cardinality MANY_TO_MANY
+focus --class Estudiante
+field set --fieldName planes --type ~.PlanDeEstudio --cardinality MANY_TO_MANY
+focus --class PlanDeEstudio
+field set --fieldName estudiantes --type ~.Estudiante --cardinality MANY_TO_MANY --mappedBy planes
+focus --class Materia
+field set --fieldName correlativas --type Materia --comment "Las materias correlativas a esta materia."
+entity jpa --class EstadoMateria --testAutomatically
+field string --fieldName nombre --comment "Serán, en Curso, cursado aprobado, final aprobado, ú otros." --notNull 
+field reference --fieldName materia --type Materia --notNull --comment "La materia en cuestión."
+web mvc all --package com.cabrera.planes.controller
+web mvc all --package com.cabrera.planes.controller
+web mvc all --package com.cabrera.planes.controller
+web mvc all --package com.cabrera.planes.controller
+web mvc all --package com.cabrera.planes
+web mvc all --package com.cabrera.planes.controller
+web mvc all --package com.cabrera.planes.controller
+web mvc all --package com.cabrera.planes.controller
+backup
+web mvc setup 
+web mvc all --package com.cabrera.planes.web
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log closed at 2013-11-10 21:42:08
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log opened at 2013-11-10 21:42:34
+web mvc all --package com.cabrera.planes.controller
+web mvc finder all 
+json all 
+web mvc json all
+backup
+backup
+focus --class ~.Estudiante
+focus --class EstadoMateria
+field reference --fieldName estudiante --type ~.Estudiante --notNull --comment "El estudiante que aprobo cursada o final de esta materia"
+backup
+security setup
+logging setup --level WARN 
+json all 
+web mvc all --package com.cabrera.planes
+web mvc language --code es 
+web mvc finder all 
+web report setup 
+web report add --reportName Estudiantes --controller ~.Estudiante --format pdf
+entity jpa --class ~.domain.User --testAutomatically --permitReservedWords
+field string --fieldName firstName --sizeMin 1 --notNull
+field string --fieldName lastName --sizeMin 1 --notNull
+field string --fieldName emailAddress --sizeMin 1 --notNull --unique
+field string --fieldName password --sizeMin 1 --notNull
+field date --fieldName activationDate --type java.util.Date 
+field string --fieldName activationKey 
+field boolean --fieldName enabled 
+field boolean --fieldName locked 
+entity jpa --class ~.domain.Role --testAutomatically --permitReservedWords
+field string --fieldName roleName --sizeMin 1 --notNull --unique
+field string --fieldName roleDescription --sizeMin --sizeMax 200 --notNull
+entity jpa --class ~.domain.UserRole --testAutomatically
+field reference --fieldName userEntry --type ~.domain.User --notNull
+field reference --fieldName roleEntry --type ~.domain.Role --notNull
+finder add findUsersByEmailAddress --class ~.domain.User
+finder add findUsersByActivationKeyAndEmailAddress --class ~.domain.User
+finder add findUserRolesByUserEntry --class ~.domain.UserRole
+web mvc scaffold --class ~.web.UserController --backingType ~.domain.User
+web mvc scaffold --class ~.web.RoleController --backingType ~.domain.Role
+web mvc scaffold --class ~.web.UserRoleController --backingType ~.domain.UserRole
+email sender setup --hostServer smtp.gmail.com --port 587 --protocol SMTP --username rohitsghatoltest@gmail.com --password password4me
+email template setup --from rohitsghatoltest@gmail.com --subject "Password Recovery"
+typicalsecurity setup 
+backup
+// Spring Roo 1.2.4.BUILD-SNAPSHOT [rev 131a17e] log closed at 2013-11-10 23:26:46

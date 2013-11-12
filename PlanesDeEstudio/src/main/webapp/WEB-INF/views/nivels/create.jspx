@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_cabrera_planes_Nivel" modelAttribute="nivel" path="/nivels" render="${empty dependencies}" z="NyMyqKjX7OF8PwUtzznX1bvxgcQ=">
+        <field:textarea field="nombre" id="c_com_cabrera_planes_Nivel_nombre" required="true" z="3jRpeabmdfjgAyYAzSxHi1Ys6CM="/>
+        <field:simple field="carreras" id="c_com_cabrera_planes_Nivel_carreras" messageCode="entity_reference_not_managed" messageCodeAttribute="Carrera" z="CKerMHPntZHfH4tQOt1SFkXcqOw="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_cabrera_planes_Nivel" render="${not empty dependencies}" z="SUnW1PfeOyiYOlW+pPm7WT7frVM="/>
+</div>

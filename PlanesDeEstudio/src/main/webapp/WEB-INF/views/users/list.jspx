@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cabrera_planes_domain_User" items="${users}" z="RYOA3l0LczzcbsvwlvRR2CEJXFg=">
+        <table:table data="${users}" id="l_com_cabrera_planes_domain_User" path="/users" z="vros+9p+ijOGebtBa4/zKe/p278=">
+            <table:column id="c_com_cabrera_planes_domain_User_firstName" property="firstName" z="Vpnabz7HNKZXsG+AaVAJ/kcU2yE="/>
+            <table:column id="c_com_cabrera_planes_domain_User_lastName" property="lastName" z="wL6h/ZINpSROUgo6Rv/+SEOqV4Q="/>
+            <table:column id="c_com_cabrera_planes_domain_User_emailAddress" property="emailAddress" z="dmC/Oh1QAvlILb0okafS2/1H/jE="/>
+            <table:column id="c_com_cabrera_planes_domain_User_password" property="password" z="dq4YVtqvKRthO1wdXVPgyizlVgo="/>
+            <table:column id="c_com_cabrera_planes_domain_User_activationKey" property="activationKey" z="rPB8ytx9RuDsah02KEYubq2mSXU="/>
+            <table:column date="true" dateTimePattern="${user_activationdate_date_format}" id="c_com_cabrera_planes_domain_User_activationDate" property="activationDate" z="4Zc2TsVSskkIHyZv61qQQbR+BZw="/>
+        </table:table>
+    </page:list>
+</div>

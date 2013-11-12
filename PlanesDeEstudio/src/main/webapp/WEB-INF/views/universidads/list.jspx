@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cabrera_planes_Universidad" items="${universidads}" z="8vGdOR1jmMFzFvowSNpkQPF1YHU=">
+        <table:table data="${universidads}" id="l_com_cabrera_planes_Universidad" path="/universidads" z="Z3kUo/ZssdeZ0ggemaGbsb1qefY=">
+            <table:column id="c_com_cabrera_planes_Universidad_nombre" property="nombre" z="/WX8qk5VMmlwysN3llQbPu2A9NQ="/>
+            <table:column id="c_com_cabrera_planes_Universidad_codigo" property="codigo" z="QHTKqMK3vuYi41iLfkzYjLFLiJY="/>
+            <table:column id="c_com_cabrera_planes_Universidad_ciudad" property="ciudad" z="sZaaya+0fUCUkEYkvJ7Q0V+3M2s="/>
+            <table:column id="c_com_cabrera_planes_Universidad_estudiantes" property="estudiantes" z="txEdkgWiju7c8akOaFdGR8p3ddg="/>
+            <table:column id="c_com_cabrera_planes_Universidad_carreras" property="carreras" z="wnZECiVQqzWenunjxgqoS9QwX+g="/>
+        </table:table>
+    </page:list>
+</div>

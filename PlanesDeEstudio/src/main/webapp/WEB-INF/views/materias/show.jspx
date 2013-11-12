@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cabrera_planes_Materia" object="${materia}" path="/materias" z="m7It0Kd7q2cD/k680zYXCrqDPZ4=">
+        <field:display field="codigo" id="s_com_cabrera_planes_Materia_codigo" object="${materia}" z="qYaf7451yldx6ipBfwutfXTDrQg="/>
+        <field:display field="nombre" id="s_com_cabrera_planes_Materia_nombre" object="${materia}" z="op2e0l6df/dGZKtKUhu17b4ssm0="/>
+        <field:display field="correlativas" id="s_com_cabrera_planes_Materia_correlativas" object="${materia}" z="VElECHf4QAxOk/JIvM4BJwuouZg="/>
+        <field:display field="planes" id="s_com_cabrera_planes_Materia_planes" object="${materia}" z="gwSiZCyaX71fsfWoxl7z1BRPhGo="/>
+    </page:show>
+</div>

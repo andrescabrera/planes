@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_cabrera_planes_Estudiante" modelAttribute="estudiante" path="/estudiantes" render="${empty dependencies}" z="LIPJl/KO50wDbUvwUlqiH2KmZiQ=">
+        <field:input field="email" id="c_com_cabrera_planes_Estudiante_email" required="true" validationMessageCode="field_invalid_email" validationRegex="^([0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$" z="BfUTjZ4V176JY9dz9PmhfW9ptmc="/>
+        <field:input field="nombre" id="c_com_cabrera_planes_Estudiante_nombre" required="true" z="TjjPyKwPly4Nfssqy0yJU5pjTE4="/>
+        <field:input field="apellido" id="c_com_cabrera_planes_Estudiante_apellido" required="true" z="dcezNo6Lq1/VddMSG+L8gzoUcmU="/>
+        <field:input field="biografia" id="c_com_cabrera_planes_Estudiante_biografia" z="vsGWPQlgv4Ifvr3wjJmcxTGN/EY="/>
+        <field:datetime dateTimePattern="${estudiante_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_cabrera_planes_Estudiante_fechaNacimiento" required="true" z="1WYFg4Na1DabZdwrkBQcz2jO7yI="/>
+        <field:select field="universidades" id="c_com_cabrera_planes_Estudiante_universidades" itemValue="id" items="${universidads}" multiple="true" path="/universidads" z="bvam64s7X/NfyUqmnvuQyBbUsvY="/>
+        <field:select field="planes" id="c_com_cabrera_planes_Estudiante_planes" itemValue="id" items="${plandeestudios}" multiple="true" path="/plandeestudios" z="3g24LciWmZmpPc90D9QkcVslwCw="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_cabrera_planes_Estudiante" render="${not empty dependencies}" z="L0NiFc5U5Dr0+xRHi9+VHMlwg5Q="/>
+</div>

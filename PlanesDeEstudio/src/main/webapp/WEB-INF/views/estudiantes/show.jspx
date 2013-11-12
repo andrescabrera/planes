@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cabrera_planes_Estudiante" object="${estudiante}" path="/estudiantes" z="JhCtryVwi+xLF79ZBd8OB6FWRQ8=">
+        <field:display field="email" id="s_com_cabrera_planes_Estudiante_email" object="${estudiante}" z="5/UTFHTiXOMLuSQXKPvvKFW7u80="/>
+        <field:display field="nombre" id="s_com_cabrera_planes_Estudiante_nombre" object="${estudiante}" z="BHN4AkObGMolemx/DZSz7N1Rf/I="/>
+        <field:display field="apellido" id="s_com_cabrera_planes_Estudiante_apellido" object="${estudiante}" z="H1uJcH3wwIe9FbQhC7ymcEYSceA="/>
+        <field:display field="biografia" id="s_com_cabrera_planes_Estudiante_biografia" object="${estudiante}" z="HHKI59TpxLNXupU7VImPXh/1R6o="/>
+        <field:display date="true" dateTimePattern="${estudiante_fechanacimiento_date_format}" field="fechaNacimiento" id="s_com_cabrera_planes_Estudiante_fechaNacimiento" object="${estudiante}" z="vxKNBersAmoa4F8XpET/JZu4eBs="/>
+        <field:display field="universidades" id="s_com_cabrera_planes_Estudiante_universidades" object="${estudiante}" z="mFxCCdbW+b2Dt+l39HYih9fo1AM="/>
+        <field:display field="planes" id="s_com_cabrera_planes_Estudiante_planes" object="${estudiante}" z="puVgIo958ALyWSvDnsjUPspAuiY="/>
+    </page:show>
+</div>

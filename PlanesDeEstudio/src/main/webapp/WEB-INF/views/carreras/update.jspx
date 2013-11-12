@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_cabrera_planes_Carrera" modelAttribute="carrera" path="/carreras" versionField="Version" z="rROcmjiateodV6pn1BvhHEHJveM=">
+        <field:textarea field="nombre" id="c_com_cabrera_planes_Carrera_nombre" required="true" z="J4iY64hTygUwv5N/NW6QWXQ380I="/>
+        <field:textarea field="codigo" id="c_com_cabrera_planes_Carrera_codigo" z="HHy5VLhWt6y1aWWCiUQYqUBlQvM="/>
+        <field:select field="nivel" id="c_com_cabrera_planes_Carrera_nivel" itemValue="id" items="${nivels}" path="/nivels" z="dTF2cY4ODsn8NGN5ZGw4c627+bY="/>
+        <field:simple field="planes" id="c_com_cabrera_planes_Carrera_planes" messageCode="entity_reference_not_managed" messageCodeAttribute="Plan De Estudio" z="9VXwbOQZJ/fbZNrWB3u7G6FQips="/>
+    </form:update>
+</div>

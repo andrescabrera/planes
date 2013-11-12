@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cabrera_planes_domain_User" object="${user}" path="/users" z="bjyPGYHMvwHRsnuesK0IPpNCq1I=">
+        <field:display field="firstName" id="s_com_cabrera_planes_domain_User_firstName" object="${user}" z="YCa+sBvIrkJRpA/tpgM8QWzeIDo="/>
+        <field:display field="lastName" id="s_com_cabrera_planes_domain_User_lastName" object="${user}" z="Acoym+y0iFAgEsfTYq5w50ccKO8="/>
+        <field:display field="emailAddress" id="s_com_cabrera_planes_domain_User_emailAddress" object="${user}" z="FceZ6E3Z482b9RdP2eDTom25XQw="/>
+        <field:display field="password" id="s_com_cabrera_planes_domain_User_password" object="${user}" z="NdiV8WJZItux1RTLLwJj+xTEJYA="/>
+        <field:display field="activationKey" id="s_com_cabrera_planes_domain_User_activationKey" object="${user}" z="zRCKVteqAMDPvpFO6Srx2ZRQhJU="/>
+        <field:display date="true" dateTimePattern="${user_activationdate_date_format}" field="activationDate" id="s_com_cabrera_planes_domain_User_activationDate" object="${user}" z="mis07TCDoxt+dCgwFAD6wx+mpKw="/>
+        <field:display field="enabled" id="s_com_cabrera_planes_domain_User_enabled" object="${user}" z="FOmZGCheO+0genNjsT0dy6fpXx0="/>
+        <field:display field="locked" id="s_com_cabrera_planes_domain_User_locked" object="${user}" z="lnDwLZ4L2EzhKPmlzXo7Z1n7fi0="/>
+    </page:show>
+</div>

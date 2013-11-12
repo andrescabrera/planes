@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_cabrera_planes_EstadoMateria" modelAttribute="estadoMateria" path="/estadomaterias" render="${empty dependencies}" z="vIR40TIpE/13M/k/Nd6epK87CTU=">
+        <field:input field="nombre" id="c_com_cabrera_planes_EstadoMateria_nombre" required="true" z="GlC8ejc+tCz1rNXX/AMigtXF9A8="/>
+        <field:select field="materia" id="c_com_cabrera_planes_EstadoMateria_materia" itemValue="id" items="${materias}" path="/materias" required="true" z="WfGzkcMNh1DhPzKZq84qSn65B7s="/>
+        <field:select field="estudiante" id="c_com_cabrera_planes_EstadoMateria_estudiante" itemValue="id" items="${estudiantes}" path="/estudiantes" required="true" z="uqJZV/cqS25BfUGmVmFpMPXkAlY="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_cabrera_planes_EstadoMateria" render="${not empty dependencies}" z="6t/4WT/0CDl5CDnXf0Vlg3/QRfc="/>
+</div>

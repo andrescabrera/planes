@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cabrera_planes_PlanDeEstudio" items="${plandeestudios}" z="OI1W0bgyqYuzuF8jF8laF2ReAY0=">
+        <table:table data="${plandeestudios}" id="l_com_cabrera_planes_PlanDeEstudio" path="/plandeestudios" z="WfF/MR2Y0fe1ZsEooU34DdL7Xwk=">
+            <table:column id="c_com_cabrera_planes_PlanDeEstudio_nombre" property="nombre" z="uLPfexWa9OCr1/Edoy+682bQLtQ="/>
+            <table:column id="c_com_cabrera_planes_PlanDeEstudio_codigo" property="codigo" z="JaOuvUn4O6DnN5wU6HdKJFp4dek="/>
+            <table:column id="c_com_cabrera_planes_PlanDeEstudio_carrera" property="carrera" z="InHkRNEulXcaoUo9gr/FeRy8vhQ="/>
+            <table:column id="c_com_cabrera_planes_PlanDeEstudio_estudiantes" property="estudiantes" z="BeQEsFDUE/V4x6IS50oLGVkUj0M="/>
+            <table:column id="c_com_cabrera_planes_PlanDeEstudio_materias" property="materias" z="aOpf4QRbyEmIvoKM/l199SOTdmo="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cabrera_planes_Universidad" object="${universidad}" path="/universidads" z="jl1lkyx7mYM+D1LCzalT4xhr22s=">
+        <field:display field="nombre" id="s_com_cabrera_planes_Universidad_nombre" object="${universidad}" z="nA75VV7z4PvRuFEivOR9PMXnV60="/>
+        <field:display field="codigo" id="s_com_cabrera_planes_Universidad_codigo" object="${universidad}" z="2Xnm+9RJg2OKAzihALNS6gR/Lrs="/>
+        <field:display field="ciudad" id="s_com_cabrera_planes_Universidad_ciudad" object="${universidad}" z="tdcFxXHSzAXMzvu/K1UoWV5sQfs="/>
+        <field:display field="estudiantes" id="s_com_cabrera_planes_Universidad_estudiantes" object="${universidad}" z="H7KKlgDcV4XG0sPCFWhfw1ZIHSI="/>
+        <field:display field="carreras" id="s_com_cabrera_planes_Universidad_carreras" object="${universidad}" z="idNGlJQmqyOElzfLl2NEymqbSvg="/>
+    </page:show>
+</div>

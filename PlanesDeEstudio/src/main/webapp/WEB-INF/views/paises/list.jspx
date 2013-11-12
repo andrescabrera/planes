@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cabrera_planes_Pais" items="${paises}" z="5H7plqb29viVa+lESZwQiNo++LE=">
+        <table:table data="${paises}" id="l_com_cabrera_planes_Pais" path="/paises" z="Ga4kN69Wd6JXBBbEXdS2fRBERn4=">
+            <table:column id="c_com_cabrera_planes_Pais_codigo" property="codigo" z="OXs9biA7UOlGnOCC/CfepRrZhjo="/>
+            <table:column id="c_com_cabrera_planes_Pais_nombre" property="nombre" z="SzJe+BnySP5Cg29HY/d7oIPlbz4="/>
+        </table:table>
+    </page:list>
+</div>

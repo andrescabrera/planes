@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cabrera_planes_Ciudad" items="${ciudads}" z="ElBiT9YONOg5oio7D/GCPU9FU3c=">
+        <table:table data="${ciudads}" id="l_com_cabrera_planes_Ciudad" path="/ciudads" z="/IDBXu+aii/FlHR4B5Yxem9AfVM=">
+            <table:column id="c_com_cabrera_planes_Ciudad_nombre" property="nombre" z="/8l3SOrrU2yRMjton2di4sdE1Ao="/>
+            <table:column id="c_com_cabrera_planes_Ciudad_codigoPostal" property="codigoPostal" z="87/FbDBbOzI2XGzDLcsqA2XcH84="/>
+            <table:column id="c_com_cabrera_planes_Ciudad_provincia" property="provincia" z="dY3hJJksGjRkTmBprz6FO4hS9Wc="/>
+        </table:table>
+    </page:list>
+</div>

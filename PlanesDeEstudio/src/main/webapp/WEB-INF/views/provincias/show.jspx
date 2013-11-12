@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cabrera_planes_Provincia" object="${provincia}" path="/provincias" z="e2zleVgXyF0xZIRZ/bg7n/vq2mY=">
+        <field:display field="nombre" id="s_com_cabrera_planes_Provincia_nombre" object="${provincia}" z="jbSKzqydaOS/b1gMl7QgGtA7wpQ="/>
+        <field:display field="codigo" id="s_com_cabrera_planes_Provincia_codigo" object="${provincia}" z="j1THW1+OpQGnO59amvOBT4oqPaM="/>
+        <field:display field="pais" id="s_com_cabrera_planes_Provincia_pais" object="${provincia}" z="DsxiOa7bLUFigYT+3V/B3mZ7l70="/>
+    </page:show>
+</div>

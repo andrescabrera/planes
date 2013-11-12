@@ -1,0 +1,57 @@
+<aspectj>
+<aspects>
+<aspect name="com.cabrera.planes.EstadoMateriaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.MateriaIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.NivelDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.domain.UserIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.CarreraIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.UniversidadDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.domain.RoleDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.CiudadIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.PaisDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.EstadoMateriaDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.UniversidadIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.EstudianteDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.domain.RoleDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.domain.UserRoleDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.domain.UserRoleIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.PlanDeEstudioIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.ProvinciaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.ProvinciaIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.PaisDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.domain.UserIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.NivelDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.EstadoMateriaIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.EstudianteIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.CarreraIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.UniversidadDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.PaisIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.EstudianteIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.CarreraDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.MateriaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.EstadoMateriaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.UniversidadIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.MateriaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.ProvinciaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.EstudianteDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.domain.UserRoleIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.domain.UserRoleDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.MateriaDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.PlanDeEstudioIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.CiudadDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.CiudadIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.CiudadDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.PlanDeEstudioDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.domain.RoleIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.PaisIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.NivelIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.domain.RoleIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.cabrera.planes.PlanDeEstudioDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.domain.UserDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.cabrera.planes.NivelIntegrationTest_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.CarreraDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.ProvinciaDataOnDemand_Roo_Configurable"/>
+<aspect name="com.cabrera.planes.domain.UserDataOnDemand_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

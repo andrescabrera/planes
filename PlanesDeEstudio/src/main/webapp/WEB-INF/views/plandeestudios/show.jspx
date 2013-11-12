@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cabrera_planes_PlanDeEstudio" object="${plandeestudio}" path="/plandeestudios" z="1w2CP+tIt8RUDPYIWiSEkfSJYrs=">
+        <field:display field="nombre" id="s_com_cabrera_planes_PlanDeEstudio_nombre" object="${plandeestudio}" z="Q6RTzPCtDKu7WAHmftyK/uVViwA="/>
+        <field:display field="codigo" id="s_com_cabrera_planes_PlanDeEstudio_codigo" object="${plandeestudio}" z="XqcH7M83TH4LL7DyWyNQ1ju8zYw="/>
+        <field:display field="carrera" id="s_com_cabrera_planes_PlanDeEstudio_carrera" object="${plandeestudio}" z="R45Jr7i8vIQD/RFcrr0sEXxixG8="/>
+        <field:display field="estudiantes" id="s_com_cabrera_planes_PlanDeEstudio_estudiantes" object="${plandeestudio}" z="K7Ik9Z5sX8rlGYul2JiYmLUmT3U="/>
+        <field:display field="materias" id="s_com_cabrera_planes_PlanDeEstudio_materias" object="${plandeestudio}" z="KhXZS8RH1lnsvbrC961klu+xKZY="/>
+    </page:show>
+</div>
